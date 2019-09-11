@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.bmi.BmiReport">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight=".7"
+                android:text="FEET"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"/>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/fseek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:fadeScrollbars="true"
+                android:backgroundTint="@color/color_white"
+                android:foregroundTint="@color/color_white"
+                android:max="7" />
+
+            <com.github.capur16.digitspeedviewlib.DigitSpeedView
+                android:id="@+id/fmeter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:speed="0"
+                app:speedTextColor="@android:color/white"
+                app:speedTextSize="15dp"
+                app:unit="FT"
+                app:unitTextColor="@android:color/holo_orange_dark"
+                app:unitTextSize="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight=".7"
+                android:text="INCH"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_light" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/iseek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:max="12" />
+
+            <com.github.capur16.digitspeedviewlib.DigitSpeedView
+                android:id="@+id/imeter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:speed="0"
+                app:speedTextColor="@android:color/holo_blue_light"
+                app:speedTextSize="15dp"
+                app:unit="in"
+                app:unitTextSize="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight=".7"
+                android:text="WEIGHT"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_light"/>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/weightseek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:max="150" />
+
+            <com.github.capur16.digitspeedviewlib.DigitSpeedView
+                android:id="@+id/weightmeter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:speed="0"
+                app:speedTextColor="@android:color/holo_orange_dark"
+                app:speedTextSize="15dp"
+                app:unit="kg"
+                app:unitTextColor="@android:color/white"
+                app:unitTextSize="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/feet"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="CM"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:background="@drawable/bordersky"
+                />
+            <TextView
+                android:id="@+id/w"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="CM"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:background="@drawable/borderred"
+                />
+            <TextView
+                android:id="@+id/bmitxt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="BMI"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:background="@drawable/bordergreen"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RESET"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:background="@drawable/bordersky"
+                />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#F0F3F3"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.shinelw.library.ColorArcProgressBar
+                    android:id="@+id/bar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    app:back_color="@android:color/white"
+                    app:back_width="2dp"
+                    app:front_color1="#00ff00"
+                    app:front_color2="#ffff00"
+                    app:front_color3="#ff0000"
+                    app:front_width="10dp"
+                    app:is_need_content="true"
+                    app:is_need_dial="true"
+                    app:is_need_title="true"
+                    app:is_need_unit="true"
+                    app:max_value="60"
+                    app:string_title="BMI CALCULATOR"
+                    app:string_unit="BMI"
+                    app:total_engle="270" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STATUS"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:background="@drawable/borderfullwhite"
+            android:layout_margin="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/underweight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#FAFCFC"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_red"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_access_time_black_24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Underweight"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/black_overlay" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="You are underweight for your height and your health"
+                        android:textColor="#fc750c"
+                        android:textSize="10dp"
+                        android:padding="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/healthy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#FAFCFC"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_green"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_access_time_black_24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Healthy"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/black_overlay" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="You are an ideal weight for your height."
+                        android:textColor="#78ae22"
+                        android:textSize="10dp"
+                        android:padding="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/overweight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#FAFCFC"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_red"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_access_time_black_24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Overweight"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/black_overlay" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your weight is above"
+                        android:textColor="#ed585c"
+                        android:textSize="10dp"
+                        android:padding="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

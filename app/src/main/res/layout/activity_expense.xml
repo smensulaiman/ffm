@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".activities.expense.ExpenseActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:padding="@dimen/padding_2">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/cell_row_bg"
+                    android:padding="@dimen/padding_5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:text="SCHEDULE VISIT"
+                        android:textSize="@dimen/txt_size_title" />
+
+                    <EditText
+                        android:id="@+id/txtScheduleVisit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Schedule area visit"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/lightGray"
+                        android:textSize="@dimen/txt_size_12"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/cell_row_bg"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:text="VISITING AREA"
+                        android:textSize="@dimen/txt_size_title" />
+
+                    <EditText
+                        android:id="@+id/txtVisitingArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:hint="Area visited"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/lightGray"
+                        android:textSize="@dimen/txt_size_12"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/cell_row_bg"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:text="PURPOSE"
+                        android:textSize="@dimen/txt_size_title" />
+
+                    <EditText
+                        android:id="@+id/txtPurpose"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:hint="Please enter your purpose"
+                        android:inputType="textMultiLine"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/lightGray"
+                        android:textSize="@dimen/txt_size_12"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/cell_row_bg"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:text="CONVEYANCE"
+                        android:textSize="@dimen/txt_size_title" />
+
+                    <EditText
+                        android:id="@+id/txtConveyance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:hint="Conveyance in Taka"
+                        android:text="0"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/lightGray"
+                        android:textSize="@dimen/txt_size_12"
+                        android:enabled="false"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/cell_row_bg"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:text="DAILY ALLOWANCE"
+                        android:textSize="@dimen/txt_size_title" />
+
+                    <EditText
+                        android:id="@+id/txtDailyAllowance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:hint="Allowance in Taka"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/lightGray"
+                        android:textSize="@dimen/txt_size_12"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/cell_row_bg"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:text="HOTEL RENT"
+                        android:textSize="@dimen/txt_size_title" />
+
+                    <EditText
+                        android:id="@+id/txtHotelRent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:hint="Hotel Rent in Taka"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/lightGray"
+                        android:textSize="@dimen/txt_size_12"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/cell_row_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:text="FOOD"
+                        android:textSize="@dimen/txt_size_title"/>
+
+                    <EditText
+                        android:id="@+id/txtFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:hint="Food expense in Taka"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/lightGray"
+                        android:textSize="@dimen/txt_size_12"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/cell_row_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:text="PHOTOSTAT"
+                        android:textSize="@dimen/txt_size_title" />
+
+                    <EditText
+                        android:id="@+id/txtPhotostat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:hint="Photostat expense in Taka"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/lightGray"
+                        android:textSize="@dimen/txt_size_12"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/cell_row_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:text="FAX"
+                        android:textSize="@dimen/txt_size_title" />
+
+                    <EditText
+                        android:id="@+id/txtFax"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:hint="Fax expense in Taka"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/lightGray"
+                        android:textSize="@dimen/txt_size_12"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/cell_row_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:text="OTHERS"
+                        android:textSize="@dimen/txt_size_title" />
+
+                    <EditText
+                        android:id="@+id/txtOthers"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:hint="Other expense in Taka"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/lightGray"
+                        android:textSize="@dimen/txt_size_12"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTotalTaka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_40"
+            android:layout_marginRight="@dimen/margin_40"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/total_amount_bg"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:text="TOTAL"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_size_14" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_25"
+            android:paddingRight="@dimen/margin_25"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_size_16" />
+
+    </LinearLayout>
+
+</LinearLayout>

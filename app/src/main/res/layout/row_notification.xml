@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:padding="10dp"
+    android:background="@color/color_white">
+
+    <TextView
+        android:id="@+id/txtIssueNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/color_green"
+        android:text="YOU ARE ASSIGNED TO AN ISSUE" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProjectIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/consultant"
+        android:layout_below="@+id/txtIssueNumber"
+        />
+    <TextView
+        android:id="@+id/txtCurrentProject"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Admin"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="10sp"
+        android:layout_toRightOf="@id/imgProjectIcon"
+        android:layout_below="@id/txtIssueNumber"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCurrentProject"
+        android:layout_toRightOf="@id/imgProjectIcon"
+        android:text="9 days ago"
+        android:textSize="8sp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/txtIssueStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txtIssueNumber"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/color_white"
+        android:textSize="10sp"
+        android:text="On Progress"
+        android:background="@drawable/borderred" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgProjectIcon"
+        android:text="SENSE-12 This is demo"
+        />
+</RelativeLayout>

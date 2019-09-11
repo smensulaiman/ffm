@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.tasks.fragments.Issue_Assigned_Fragment">
+
+    <LinearLayout
+        android:id="@+id/filter_issue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_filter_list"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter Issue"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/gray_btn_bg_pressed_color"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/issue_item"
+        android:layout_below="@+id/filter_issue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/row_issue"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0F81D0</color>
+    <color name="colorPrimaryDark">#0B64A2</color>
+    <color name="colorAccent">#535151</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorTransparentWhite">#cccccc</color>
+    <color name="colorPink">#CC5454</color>
+    <color name="colorSky">#2196F3</color>
+    <color name="colorSkyLight">#00AAFF</color>
+    <color name="colorOrange">#FF6634</color>
+    <color name="colorGreen">#72CAAF</color>
+    <color name="colorTheme">#37ae47</color>
+    <color name="colorTransparentTheme">#AA37ae47</color>
+    <color name="color_midtranssparent">#AA000000</color>
+    <color name="color_whitetranssparent">#22FFFFFF</color>
+    <color name="color_green">#48a158</color>
+    <color name="color_red">#F44336</color>
+    <color name="color_yellow">#ffff00</color>
+    <color name="color_white">#ffffff</color>
+    <color name="transparent">#D8D8D8</color>
+    <color name="darkGray">#555555</color>
+    <color name="lightGray">#AAAAAA</color>
+    <color name="very_lightGray">#999999</color>
+    <color name="color_black">#000000</color>
+    <color name="color_report">#AAFFA726</color>
+    <color name="color_task">#AAB769C6</color>
+    <color name="color_expense">#AAFF6F48</color>
+    <color name="color_message">#AA07938A</color>
+    <color name="layout_color">#3F4575</color>
+    <color name="color_number_of">#60A2D2</color>
+    <color name="color_transparent_black">#AA000000</color>
+    <color name="color_transparent_red">#44FF0000</color>
+    <color name="color_layout_part_1">#ff0000</color>
+    <color name="color_layout_part_2">#ffff00</color>
+    <color name="color_layout_part_3">#ff00ff</color>
+    <color name="color_layout_part_4">#00ff00</color>
+    <color name="ds_list_selector_bg">#49067397</color>
+    <color name="softcolorPrimary">#85be64</color>
+    <color name="sky">#41BBD9</color>
+    <color name="red">#ed5a5f</color>
+    <color name="yellow">#C5963F</color>
+    <color name="green">#77AD20</color>
+    <color name="orange">#FC740A</color>
+    <color name="deepsky">#4D85D1</color>
+    <color name="shadegreen">#45A563</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#8760f2</color>
+    <color name="yello">#ffb300</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#fe104d</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="newsky">#1EBA95</color>
+    <color name="bar">#DC5627</color>
+    <color name="pred">#E05F5B</color>
+    <color name="predD">#AF4643</color>
+
+
+    <color name="bg_screen1">#3498db</color>
+    <color name="bg_screen2">#e74c3c</color>
+    <color name="bg_screen3">#9b59b6</color>
+    <color name="bg_screen4">#1abc9c</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#6a89cc</color>
+    <color name="dot_light_screen2">#e55039</color>
+    <color name="dot_light_screen3">#82ccdd</color>
+    <color name="dot_light_screen4">#38ada9</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <color name="dot_dark_screen1">#2980b9</color>
+    <color name="dot_dark_screen2">#c0392b</color>
+    <color name="dot_dark_screen3">#8e44ad</color>
+    <color name="dot_dark_screen4">#27ae60</color>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+</resources>

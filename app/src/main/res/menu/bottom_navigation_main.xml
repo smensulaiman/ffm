@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_dashboard"
+        android:title="My Issues"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_projects"
+        android:enabled="true"
+        android:icon="@drawable/ic_chat"
+        android:title="Projects"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_notifications"
+        android:enabled="true"
+        android:icon="@drawable/ic_notifications"
+        android:title="Notifications"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_activity"
+        android:enabled="true"
+        android:icon="@drawable/ic_show_chart"
+        android:title="Activity"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_watchlist"
+        android:enabled="true"
+        android:icon="@drawable/ic_remove_red_eye"
+        android:title="Watchlist"
+        app:showAsAction="ifRoom" />
+
+</menu>

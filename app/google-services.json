@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "612226835838",
+    "firebase_url": "https://database-44754.firebaseio.com",
+    "project_id": "database-44754",
+    "storage_bucket": "database-44754.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612226835838:android:492003dc7faf7973",
+        "android_client_info": {
+          "package_name": "com.diufinalproject.sugarsense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612226835838-ettlq2v229f5c5pp4auir8r633j5vufo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYrj-ylx5Kq5VapEh4AcLzCXlqI8puTf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612226835838-ettlq2v229f5c5pp4auir8r633j5vufo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/slideImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/alarm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/circle_white"
+        android:padding="20dp"
+        />
+
+    <TextView
+        android:id="@+id/headText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slideImage"
+        android:layout_centerHorizontal="true"
+        android:text="Heading"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorwhite"
+        />
+
+    <TextView
+        android:id="@+id/descText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/light"
+        android:padding="10dp"
+        android:text="Description"
+        android:gravity="center"
+        android:textColor="@color/colorTransparentWhite"
+        android:textSize="20sp" />
+</RelativeLayout>
